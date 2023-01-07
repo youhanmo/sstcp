@@ -20,6 +20,7 @@ In this paper, we totally explore three RQs,
 - `astnn`:  Files for RQ1 and RQ2 of ASTNN
 - `doc2vec`: Files for RQ1 and RQ2 of Doc2Vec
 - `approach`: Files for RQ3 of our approach **SSTcp** ,  an IR-based TCP approach with code representation.
+- `data`: Data used for evaluating our approach **SSTcp**. Specifically, we provide D237, which is collcted by us as benchmark.
 
 ## Reproducibility
 
