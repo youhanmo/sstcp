@@ -2,8 +2,12 @@
 
 This repository is for paper:  Can Code Representation Boost Information-Retrieval-Based Test Case Prioritization?
 
-Test case prioritization (TCP) aims to schedule the execution order of test cases for earlier faults detection. A recent study demonstrates that information retrieval (IR) based TCP achieves state-of-the-art performance. IR-based TCP ranks test cases based on the similarity between test cases and software
-changes. The currently best IR-based TCP technique adopts the BM25 method to measure their textual similarity. Although it has been demonstrated to be effective, both test cases and software changes differ from the text, which embodies rich semantics. Intuitively, incorporating semantics into IR-based TCP could improve its effectiveness, but this direction is still unexplored till now. Therefore, we conduct the first empirical study to investigate whether the semantic correlation between test cases and software changes can further boost IR-based TCP. To extract semantics, we studied two code representation methods (i.e.,Doc2Vec and ASTNN). We explored two different usage strategies (i.e., directly extracting embeddings from encoders and fine-tuning the embedding models based on proper downstream tasks for better semantic representation specific to the TCP task) for them. Our results demonstrate that incorporating semantics achieves 13% ∼ 51% improvements in the average percentage of fault detection over the state-of-the-art BM25-based technique.
+Test case prioritization (TCP) aims to schedule the execution order of test cases for earlier fault detection. 
+A recent study has demonstrated that the information-retrieval-based (IR-based) TCP approaches achieve the state-of-the-art effectiveness. 
+The current IR-based TCP approaches leverage lexical similarity between test cases and code changes to guide TCP while ignoring rich code semantics, which may limit their effectiveness to some degree.
+In this paper, we conduct the first study to explore whether code semantic information can further boost IR-based TCP. 
+Here, we studied two types of code representation methods (i.e., general-purpose and task-associated models) and explored two modes of utilizing the code representation embeddings, (i.e., unsupervised and supervised modes) for IR-based TCP. 
+Our results demonstrate that incorporating code semantics through the supervised mode of code representation can achieve 16.96% improvement in the efficiency of fault detection over the state-of-the-art IR-based TCP approach (which is based on lexical similarity).
 
 ## The Structure
 
